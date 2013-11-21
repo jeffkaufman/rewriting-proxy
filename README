@@ -1,0 +1,13 @@
+Simple code for running a proxy that changes responses.  Probably not robust
+enough for production use, but good for experimenting.
+
+In one terminal:
+
+    $ python proxy.py localhost 8080 to_uppercase
+
+In another terminal:
+
+    $ http_proxy=localhost:8024 curl -D- http://www.example.com
+
+Gzipped responses are automatically unzipped before being passed to your
+rewriting code.
