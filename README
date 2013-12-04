@@ -1,3 +1,8 @@
+UPDATE: don't use this, use [mitmproxy](http://mitmproxy.org/) instead.  Not
+only can it do http, but it can also proxy https.
+
+----------------------------------------------------------------------------
+
 Simple code for running a proxy that changes responses.  Probably not robust
 enough for production use, but good for experimenting.
 
